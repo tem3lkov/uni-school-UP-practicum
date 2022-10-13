@@ -123,6 +123,13 @@ int main() {
 
     cout << prod << ", " << lastDigit << " - " << evenOrOdd << endl;
 
+
+    // Task 8
+    int num1, num2;
+    cin >> num1 >> num2;
+    int reminder = num2 % num1;
+    cout << boolalpha << reminder << endl;
+
     return 0;
 
 }
