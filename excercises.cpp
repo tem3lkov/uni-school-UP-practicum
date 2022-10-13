@@ -7,48 +7,48 @@ using namespace std;
 int main()
 {
     // Task 0
-    //cout << "\"Shte si mina OOP-to hihi!\"" << endl;
+    cout << "\"Shte si mina OOP-to hihi!\"" << endl;
 
     // Task 1
-    //int num1, num2;
+    int num1, num2;
 
-    //cin >> num1 >> num2;
+    cin >> num1 >> num2;
 
-    //int sum = num1 + num2;
-    //int difference = num1 - num2;
-    //int product = num1 * num2;
-    //int division = num1 / num2;
-    //int reminderAfterDevision = num1 % num2;
+    int sum = num1 + num2;
+    int difference = num1 - num2;
+    int product = num1 * num2;
+    int division = num1 / num2;
+    int reminderAfterDevision = num1 % num2;
 
-    //cout << "Sum: " << sum << endl;
-    //cout << "Difference: " << difference << endl;
-    //cout << "Product: " << product << endl;
-    //cout << "Division: " << division << endl;
-    //cout << "Reminder: " << reminderAfterDevision << endl;
+    cout << "Sum: " << sum << endl;
+    cout << "Difference: " << difference << endl;
+    cout << "Product: " << product << endl;
+    cout << "Division: " << division << endl;
+    cout << "Reminder: " << reminderAfterDevision << endl;
 
     // Task 2    
-    //int a, b;
-    //cin >> a >> b;
+    int a, b;
+    cin >> a >> b;
 
-    //a = a + b;
+    a = a + b;
 
-    //b = a - b;
+    b = a - b;
 
-    //a = a - b;
+    a = a - b;
 
-    //cout << a << " " << b;
+    cout << a << " " << b;
     
 
 
     // VARIANT 2
-    //a = a ^ b;
-    //b = b ^ a;
-    //a = a ^ b;
+    a = a ^ b;
+    b = b ^ a;
+    a = a ^ b;
 
     
 
     // Task 3
-    /*int fourDigitNumber;
+    int fourDigitNumber;
 
     cin >> fourDigitNumber;
 
@@ -62,28 +62,28 @@ int main()
     cout << "Second digit: " << secondDigit << endl;
     cout << "Third digit: " << thirdDigit << endl;
     cout << "Forth digit: " << forthDigit << endl;
-    cout << "Sum: " << sum << endl;*/
+    cout << "Sum: " << sum << endl;
 
     // Task 4
-    //int fourDigitNumber;
+    int fourDigitNumber;
 
-    //cin >> fourDigitNumber;
+    cin >> fourDigitNumber;
 
-    //int firstDigit = fourDigitNumber / 1000;
-    //int secondDigit = (fourDigitNumber / 100) % 10;
-    //int thirdDigit = ((fourDigitNumber / 10) - 100) % 10;
-    //int forthDigit = ((fourDigitNumber - 1000) % 100) % 10;
-    //int sum = firstDigit + secondDigit + thirdDigit + forthDigit;
-    //int finalDigit = (forthDigit * 1000) + (thirdDigit * 100) + (secondDigit * 10) + (firstDigit);
+    int firstDigit = fourDigitNumber / 1000;
+    int secondDigit = (fourDigitNumber / 100) % 10;
+    int thirdDigit = ((fourDigitNumber / 10) - 100) % 10;
+    int forthDigit = ((fourDigitNumber - 1000) % 100) % 10;
+    int sum = firstDigit + secondDigit + thirdDigit + forthDigit;
+    int finalDigit = (forthDigit * 1000) + (thirdDigit * 100) + (secondDigit * 10) + (firstDigit);
 
-    //cout << finalDigit << endl;
+    cout << finalDigit << endl;
 
    //Task 5
    // Въведете 3 числа от клавиатурата а1, а2 и а3.
    // Разменете стойностите им, така че а1 да има стойността на а2, 
    // а2 да има стойността на а3, а а3 да има старата стойност на а1.
 
-   /* int a1, a2, a3;
+    int a1, a2, a3;
 
     cin >> a1 >> a2 >> a3;
 
@@ -105,7 +105,7 @@ int main()
 
     degreesInFahrenheit = degreesInCelsius * 9 / 5 + 32;
 
-    cout << degreesInFahrenheit << endl;*/
+    cout << degreesInFahrenheit << endl;
 
     return 0;
   
