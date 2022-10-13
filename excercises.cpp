@@ -4,8 +4,7 @@
 #include <iostream>
 
 using namespace std;
-int main()
-{
+int main() {
     // Task 0
     cout << "\"Shte si mina OOP-to hihi!\"" << endl;
 
@@ -37,7 +36,7 @@ int main()
     a = a - b;
 
     cout << a << " " << b;
-    
+
 
 
     // VARIANT 2
@@ -45,7 +44,7 @@ int main()
     b = b ^ a;
     a = a ^ b;
 
-    
+
 
     // Task 3
     int fourDigitNumber;
@@ -78,10 +77,10 @@ int main()
 
     cout << finalDigit << endl;
 
-   //Task 5
-   // Въведете 3 числа от клавиатурата а1, а2 и а3.
-   // Разменете стойностите им, така че а1 да има стойността на а2, 
-   // а2 да има стойността на а3, а а3 да има старата стойност на а1.
+    //Task 5
+    // Въведете 3 числа от клавиатурата а1, а2 и а3.
+    // Разменете стойностите им, така че а1 да има стойността на а2, 
+    // а2 да има стойността на а3, а а3 да има старата стойност на а1.
 
     int a1, a2, a3;
 
@@ -96,9 +95,9 @@ int main()
 
     cout << "a1 = " << a1 << endl;
     cout << "a2 = " << a2 << endl;
-    cout << "a3 = " << a3 << endl;*/
-
-    /*float degreesInCelsius;
+    cout << "a3 = " << a3 << endl; 
+    
+    float degreesInCelsius;
     float degreesInFahrenheit;
 
     cin >> degreesInCelsius;
@@ -107,19 +106,34 @@ int main()
 
     cout << degreesInFahrenheit << endl;
 
+
+    // Task 7
+    int a;
+    int b;
+
+    cin >> a >> b;
+
+    int prod = a * b;
+    int reminder = prod % 1000;
+    //int threeNumbers = ((prod - 100) % 10) % 10;
+    //int fourNumbers = ((prod - 1000) % 100) % 10;
+    int lastDigit = prod % 10;
+    bool evenOrOdd = (lastDigit % 2 == 0) ? 1 : 0;
+
+
+    cout << prod << ", " << lastDigit << " - " << evenOrOdd << endl;
+
     return 0;
-  
-    
 
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
+    // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
+    // Debug program: F5 or Debug > Start Debugging menu
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+    // Tips for Getting Started:
+    //   1. Use the Solution Explorer window to add/manage files
+    //   2. Use the Team Explorer window to connect to source control
+    //   3. Use the Output window to see build output and other messages
+    //   4. Use the Error List window to view errors
+    //   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
+    //   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
