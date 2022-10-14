@@ -2,9 +2,10 @@
 //
 
 #include <iostream>
-
+#include <math.h>
 using namespace std;
-int main() {
+int main() 
+{
     // Task 0
     cout << "\"Shte si mina OOP-to hihi!\"" << endl;
 
@@ -95,8 +96,8 @@ int main() {
 
     cout << "a1 = " << a1 << endl;
     cout << "a2 = " << a2 << endl;
-    cout << "a3 = " << a3 << endl; 
-    
+    cout << "a3 = " << a3 << endl;
+
     float degreesInCelsius;
     float degreesInFahrenheit;
 
@@ -127,20 +128,74 @@ int main() {
     // Task 8
     int num1, num2;
     cin >> num1 >> num2;
-    int reminder = num2 % num1;
+    bool reminder = num2 % num1 == 0;
     cout << boolalpha << reminder << endl;
+    
+    // Task 9
+    int firstSide, secondSide, thirdSide;
+    cin >> firstSide >> secondSide >> thirdSide;
 
-    return 0;
+    bool firstIsOK = firstSide < secondSide + thirdSide;
+    bool secondIsOK = secondSide < firstSide + thirdSide;
+    bool thirdIsOK = thirdSide < firstSide + secondSide;
+
+    bool triangleExists = (firstIsOK && secondIsOK && thirdIsOK);
+    cout << boolalpha << triangleExists << endl;
+
+    // Task 10
+    double firstSide, secondSide, thirdSide, area, perimeterOver2, perimeter;
+    cin >> firstSide >> secondSide >> thirdSide;
+
+    bool firstIsOK = firstSide < secondSide + thirdSide;
+    bool secondIsOK = secondSide < firstSide + thirdSide;
+    bool thirdIsOK = thirdSide < firstSide + secondSide;
+
+    bool triangleExists = (firstIsOK && secondIsOK && thirdIsOK);
+
+    perimeter = firstSide + secondSide + thirdSide;
+    perimeterOver2 = perimeter / 2;
+
+    area = std::sqrt(perimeterOver2 * (perimeterOver2 - firstSide)
+        * (perimeterOver2 - secondSide)
+        * (perimeterOver2 - thirdSide));
+
+    cout << "Area: " << (triangleExists ? area : -1) << endl;
+    cout << "Perimeter: " << (triangleExists ? perimeter : -1) << endl;
+
+    // Task 11
+    int firstNumber, secondNumber, thirdNumber;
+    cin >> firstNumber >> secondNumber >> thirdNumber;
+
+    int maxNumber, minNumber;
+
+    maxNumber = secondNumber;
+    if (firstNumber > maxNumber) maxNumber = firstNumber;
+    if (thirdNumber > maxNumber) maxNumber = thirdNumber;
+
+    minNumber = secondNumber;
+    if (firstNumber < minNumber) minNumber = firstNumber;
+    if (thirdNumber < minNumber) minNumber = thirdNumber;
+
+    cout << "Max: " << maxNumber << "\n" << "Min: " << minNumber;
+    
+
+    // Task 12
+    double num, startOfInterval, endOfInterval;
+    cin >> num >> startOfInterval >> endOfInterval;
+
+    bool inInterval = startOfInterval <= num && endOfInterval >= num;
+
+    cout << boolalpha << inInterval << endl;
 
 }
 
-    // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-    // Debug program: F5 or Debug > Start Debugging menu
+// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
+// Debug program: F5 or Debug > Start Debugging menu
 
-    // Tips for Getting Started:
-    //   1. Use the Solution Explorer window to add/manage files
-    //   2. Use the Team Explorer window to connect to source control
-    //   3. Use the Output window to see build output and other messages
-    //   4. Use the Error List window to view errors
-    //   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-    //   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+// Tips for Getting Started:
+//   1. Use the Solution Explorer window to add/manage files
+//   2. Use the Team Explorer window to connect to source control
+//   3. Use the Output window to see build output and other messages
+//   4. Use the Error List window to view errors
+//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
+//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
