@@ -6,10 +6,10 @@
 using namespace std;
 int main() 
 {
-    // Task 0
+    // Task 0 ----------------------------------------------------------------------------------------
     cout << "\"Shte si mina OOP-to hihi!\"" << endl;
 
-    // Task 1
+    // Task 1 ----------------------------------------------------------------------------------------
     int num1, num2;
 
     cin >> num1 >> num2;
@@ -26,7 +26,7 @@ int main()
     cout << "Division: " << division << endl;
     cout << "Reminder: " << reminderAfterDevision << endl;
 
-    // Task 2    
+    // Task 2 ----------------------------------------------------------------------------------------    
     int a, b;
     cin >> a >> b;
 
@@ -40,14 +40,14 @@ int main()
 
 
 
-    // VARIANT 2
+    // VARIANT 2 
     a = a ^ b;
     b = b ^ a;
     a = a ^ b;
 
 
 
-    // Task 3
+    // Task 3 ----------------------------------------------------------------------------------------
     int fourDigitNumber;
 
     cin >> fourDigitNumber;
@@ -64,7 +64,7 @@ int main()
     cout << "Forth digit: " << forthDigit << endl;
     cout << "Sum: " << sum << endl;
 
-    // Task 4
+    // Task 4 ----------------------------------------------------------------------------------------
     int fourDigitNumber;
 
     cin >> fourDigitNumber;
@@ -78,7 +78,7 @@ int main()
 
     cout << finalDigit << endl;
 
-    //Task 5
+    //Task 5 ----------------------------------------------------------------------------------------
     // Въведете 3 числа от клавиатурата а1, а2 и а3.
     // Разменете стойностите им, така че а1 да има стойността на а2, 
     // а2 да има стойността на а3, а а3 да има старата стойност на а1.
@@ -98,6 +98,7 @@ int main()
     cout << "a2 = " << a2 << endl;
     cout << "a3 = " << a3 << endl;
 
+    // Task 6 ----------------------------------------------------------------------------------------
     float degreesInCelsius;
     float degreesInFahrenheit;
 
@@ -108,7 +109,7 @@ int main()
     cout << degreesInFahrenheit << endl;
 
 
-    // Task 7
+    // Task 7 ----------------------------------------------------------------------------------------
     int a;
     int b;
 
@@ -125,13 +126,13 @@ int main()
     cout << prod << ", " << lastDigit << " - " << evenOrOdd << endl;
 
 
-    // Task 8
+    // Task 8 ----------------------------------------------------------------------------------------
     int num1, num2;
     cin >> num1 >> num2;
     bool reminder = num2 % num1 == 0;
     cout << boolalpha << reminder << endl;
     
-    // Task 9
+    // Task 9 ----------------------------------------------------------------------------------------
     int firstSide, secondSide, thirdSide;
     cin >> firstSide >> secondSide >> thirdSide;
 
@@ -142,7 +143,7 @@ int main()
     bool triangleExists = (firstIsOK && secondIsOK && thirdIsOK);
     cout << boolalpha << triangleExists << endl;
 
-    // Task 10
+    // Task 10 ----------------------------------------------------------------------------------------
     double firstSide, secondSide, thirdSide, area, perimeterOver2, perimeter;
     cin >> firstSide >> secondSide >> thirdSide;
 
@@ -162,7 +163,7 @@ int main()
     cout << "Area: " << (triangleExists ? area : -1) << endl;
     cout << "Perimeter: " << (triangleExists ? perimeter : -1) << endl;
 
-    // Task 11
+    // Task 11 ----------------------------------------------------------------------------------------
     int firstNumber, secondNumber, thirdNumber;
     cin >> firstNumber >> secondNumber >> thirdNumber;
 
@@ -179,7 +180,7 @@ int main()
     cout << "Max: " << maxNumber << "\n" << "Min: " << minNumber;
     
 
-    // Task 12
+    // Task 12 ----------------------------------------------------------------------------------------
     double num, startOfInterval, endOfInterval;
     cin >> num >> startOfInterval >> endOfInterval;
 
@@ -187,13 +188,13 @@ int main()
 
     cout << boolalpha << inInterval << endl;
 
-    // Task 13
+    // Task 13 ----------------------------------------------------------------------------------------
     int year;
-	cin >> year;
+    cin >> year;
 
-	bool lastDigitsZero = (year % 10 == 0 ? true : false) && (year % 100 == 0 ? true : false);
-	bool leapYear = (year % 4 == 0 ? lastDigitsZero ? (year % 400 == 0 ? true : false) : true : false);
-	cout << boolalpha << leapYear << endl;
+    bool lastDigitsZero = (year % 10 == 0 ? true : false) && (year % 100 == 0 ? true : false);
+    bool leapYear = (year % 4 == 0 ? lastDigitsZero ? (year % 400 == 0 ? true : false) : true : false);
+    cout << boolalpha << leapYear << endl;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
