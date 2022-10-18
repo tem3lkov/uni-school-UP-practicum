@@ -187,6 +187,13 @@ int main()
 
     cout << boolalpha << inInterval << endl;
 
+    // Task 13
+    int year;
+	cin >> year;
+
+	bool lastDigitsZero = (year % 10 == 0 ? true : false) && (year % 100 == 0 ? true : false);
+	bool leapYear = (year % 4 == 0 ? lastDigitsZero ? (year % 400 == 0 ? true : false) : true : false);
+	cout << boolalpha << leapYear << endl;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
