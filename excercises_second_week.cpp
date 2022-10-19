@@ -121,6 +121,39 @@ int main()
 		int result = -b / a;
 		std::cout << result << std::endl;
 	}
+	
+	// Task 5
+		int month = 0;
+	int year = 0;
+	int days = 0;
+
+	std::cin >> month >> year;
+	bool lastDigitsZero = (year % 10 == 0 ? true : false) && (year % 100 == 0 ? true : false);
+	bool leapYear = (year % 4 == 0 ? lastDigitsZero ? (year % 400 == 0 ? true : false) : true : false);
+
+	switch (month) {
+		case 1: 
+		case 3:
+		case 5:
+		case 7:
+		case 8:
+		case 10:
+		case 12:
+			days = 31;
+			break;
+		case 2:
+			if (leapYear) days = 29;
+			else days = 28;
+			break;
+		case 4:
+		case 6:
+		case 9:
+		case 11:
+			days = 30;
+
+	}
+
+	std::cout << days << std::endl;
 
 }
 
