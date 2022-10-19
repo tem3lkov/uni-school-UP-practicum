@@ -4,9 +4,10 @@
 #include <iostream>
 
 int main()
-{
-    // Task 0
-    int num1= 0;
+{	
+
+    // Task 0 
+    int num1 = 0;
     int num2 = 0;
     char mathOperator = ' ';
 
@@ -17,34 +18,34 @@ int main()
     std::cin >> way;
 
     switch (way) {
-        case 1:
-            std::cin >> num1 >> num2 >> mathOperator;
-            break;
-        case 2: 
-            std::cin >> mathOperator >> num1 >> num2;
-            break;
-        case 3: 
-            std::cin >> num1 >> mathOperator >> num2;
-            break;
+    case 1:
+        std::cin >> num1 >> num2 >> mathOperator;
+        break;
+    case 2:
+        std::cin >> mathOperator >> num1 >> num2;
+        break;
+    case 3:
+        std::cin >> num1 >> mathOperator >> num2;
+        break;
     };
 
     switch (mathOperator) {
-        case '+':
-            result = num1 + num2;
-            break;
-        case '-':
-            result = num1 - num2;
-            break;
-        case '*':
-            result = num1 * num2;
-            break;
-        case '/':
-            result = num1 / num2;
-            break;
+    case '+':
+        result = num1 + num2;
+        break;
+    case '-':
+        result = num1 - num2;
+        break;
+    case '*':
+        result = num1 * num2;
+        break;
+    case '/':
+        result = num1 / num2;
+        break;
     };
 
     std::cout << result << std::endl;
-	
+
     //Task 1
     double sum = 0;
     bool sick = false;
@@ -52,36 +53,59 @@ int main()
     std::cin >> sum >> sick;
 
     if (sick) {
-	std::cout << "nqma da izlizam" << std::endl;
+        std::cout << "nqma da izlizam" << std::endl;
     }
     else std::cout << "ZDRAV SUM VEEEEEEEEEEE!" << std::endl;
 
     if (sum > 0) {
-	std::cout << "shte si kupq lekarstva" << std::endl;
+        std::cout << "shte si kupq lekarstva" << std::endl;
     }
     else if (sum > 0 && sum <= 10) std::cout << "shte otida na kafe" << std::endl;
     else std::cout << "shte stoq v kushti i shte piq chai" << std::endl;
 
-    	//Task 2
-    	char charecter = ' ';
-	int difference = 'a' - 'A';
-	
-	std::cin >> charecter;
-	bool check = charecter < 65 || charecter > 122;
-	if (check) std::cout << "The character is not a letter!" << std::endl;
-	if (charecter - difference >= 'A' && !check) {
-		char newChar = (char)(charecter - difference);
-		std::cout << "The uppercase character corresponding to " << charecter << " is " << newChar << std::endl;
-	}
-	else if ((charecter - (charecter + difference)) < 0 && !check) {
-		char newChar = (char)(charecter + difference);
-		std::cout << "The lowercase character corresponding to " << charecter << " is " << newChar << std::endl;
+    //Task 2
+    char charecter = ' ';
+    int difference = 'a' - 'A';
+
+    std::cin >> charecter;
+    bool check = charecter < 65 || charecter > 122;
+    if (check) std::cout << "The character is not a letter!" << std::endl;
+    if (charecter - difference >= 'A' && !check) {
+        char newChar = (char)(charecter - difference);
+        std::cout << "The uppercase character corresponding to " << charecter << " is " << newChar << std::endl;
+    }
+    else if ((charecter - (charecter + difference)) < 0 && !check) {
+        char newChar = (char)(charecter + difference);
+        std::cout << "The lowercase character corresponding to " << charecter << " is " << newChar << std::endl;
+    }
+
+	// Task 3
+	int monthNum = 0;
+	std::cin >> monthNum;
+
+	switch (monthNum) {
+		case 1:
+		case 2:
+		case 3:
+			std::cout << "Winter" << std::endl;
+			break;
+		case 4:
+		case 5:
+		case 6:
+			std::cout << "Spring" << std::endl;
+			break;
+		case 7:
+		case 8:
+		case 9:
+			std::cout << "Summer" << std::endl;
+			break;
+		case 10:
+		case 11:
+		case 12:
+			std::cout << "Fall" << std::endl;
+			break;
 	}
 
-	
-	
-
-	
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
