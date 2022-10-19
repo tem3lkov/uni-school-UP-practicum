@@ -26,7 +26,7 @@ int main()
         case 3: 
             std::cin >> num1 >> mathOperator >> num2;
             break;
-    }
+    };
 
     switch (mathOperator) {
         case '+':
@@ -41,26 +41,46 @@ int main()
         case '/':
             result = num1 / num2;
             break;
-    }
+    };
 
     std::cout << result << std::endl;
+	
     //Task 1
+    double sum = 0;
+    bool sick = false;
 
-	double sum = 0;
-	bool sick = false;
+    std::cin >> sum >> sick;
 
-	std::cin >> sum >> sick;
+    if (sick) {
+	std::cout << "nqma da izlizam" << std::endl;
+    }
+    else std::cout << "ZDRAV SUM VEEEEEEEEEEE!" << std::endl;
 
-	if (sick) {
-		std::cout << "nqma da izlizam" << std::endl;
+    if (sum > 0) {
+	std::cout << "shte si kupq lekarstva" << std::endl;
+    }
+    else if (sum > 0 && sum <= 10) std::cout << "shte otida na kafe" << std::endl;
+    else std::cout << "shte stoq v kushti i shte piq chai" << std::endl;
+
+    	//Task 2
+    	char charecter = ' ';
+	int difference = 'a' - 'A';
+	
+	std::cin >> charecter;
+	bool check = charecter < 65 || charecter > 122;
+	if (check) std::cout << "The character is not a letter!" << std::endl;
+	if (charecter - difference >= 'A' && !check) {
+		char newChar = (char)(charecter - difference);
+		std::cout << "The uppercase character corresponding to " << charecter << " is " << newChar << std::endl;
 	}
-	else std::cout << "ZDRAV SUM VEEEEEEEEEEE!" << std::endl;
-
-	if (sum > 0) {
-		std::cout << "shte si kupq lekarstva" << std::endl;
+	else if ((charecter - (charecter + difference)) < 0 && !check) {
+		char newChar = (char)(charecter + difference);
+		std::cout << "The lowercase character corresponding to " << charecter << " is " << newChar << std::endl;
 	}
-	else if (sum > 0 && sum <= 10) std::cout << "shte otida na kafe" << std::endl;
-	else std::cout << "shte stoq v kushti i shte piq chai" << std::endl;
+
+	
+	
+
 	
 }
 
