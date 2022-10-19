@@ -142,8 +142,7 @@ int main()
 			days = 31;
 			break;
 		case 2:
-			if (leapYear) days = 29;
-			else days = 28;
+			days = leapYear ? 29 : 28;
 			break;
 		case 4:
 		case 6:
