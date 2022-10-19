@@ -44,6 +44,24 @@ int main()
     }
 
     std::cout << result << std::endl;
+    //Task 1
+
+	double sum = 0;
+	bool sick = false;
+
+	std::cin >> sum >> sick;
+
+	if (sick) {
+		std::cout << "nqma da izlizam" << std::endl;
+	}
+	else std::cout << "ZDRAV SUM VEEEEEEEEEEE!" << std::endl;
+
+	if (sum > 0) {
+		std::cout << "shte si kupq lekarstva" << std::endl;
+	}
+	else if (sum > 0 && sum <= 10) std::cout << "shte otida na kafe" << std::endl;
+	else std::cout << "shte stoq v kushti i shte piq chai" << std::endl;
+	
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
