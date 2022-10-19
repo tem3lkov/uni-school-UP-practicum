@@ -5,13 +5,13 @@
 
 int main()
 {
-    int num1;
-    int num2;
-    char mathOperator;
+    int num1= 0;
+    int num2 = 0;
+    char mathOperator = ' ';
 
-    int result;
+    int result = 0;
 
-    int way;
+    int way = 0;
 
     std::cin >> way;
 
