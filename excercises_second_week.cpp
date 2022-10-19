@@ -106,6 +106,22 @@ int main()
 			break;
 	}
 
+	// Task 4
+	int a = 0;
+	int b = 0;
+
+	std::cin >> a >> b;
+
+	// Ax + B = 0
+	if (a == 0 && b == 0) {
+		std::cout << "INF" << std::endl;
+	}
+	else if (a == 0 && b != 0) std::cout << "NO" << std::endl;
+	else {
+		int result = -b / a;
+		std::cout << result << std::endl;
+	}
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
