@@ -98,5 +98,14 @@ int main()
 	} while (number != 0);
 	std::cout << sum << std::endl;
 	
+	// Seventh task
+	int a, n, temp = 1;
+	std::cin >> a >> n;
+	
+	for (int i = n; i > 0; i--) 
+	{
+		temp *= a;
+	}
+	std::cout << temp << std::endl;
 }
 
