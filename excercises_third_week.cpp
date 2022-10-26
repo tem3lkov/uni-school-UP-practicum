@@ -39,8 +39,8 @@ int main()
 
     std::cout << temp << std::endl;
     
-    // Forth task
-    int n = 0;
+    	// Forth task
+	int n = 0;
 	int newNumber = 0;
 	int firstNumber = 0;
 	int secondNumber = 1;
@@ -54,5 +54,24 @@ int main()
 		firstNumber = newNumber;
 	}
 	std::cout << newNumber << std::endl;
+
+	// Second way
+	int function(int n) 
+	{
+	if (n < 2) return n;
+	return function(n - 1) + function(n - 2);
+	}
+
+	int main()
+	{
+		int n = 0;
+		std::cin >> n;
+
+		int number = function(n);
+		std::cout << number << std::endl;
+
+	}
+	
+	
 }
 
