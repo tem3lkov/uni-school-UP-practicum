@@ -83,6 +83,20 @@ int main()
 	} while (n != 0);
 	std::cout << sum << std::endl;
 	
+	// Sixth task
+	int number = 0;
+	int lastNum = 0;
+	int sum = 0;
+	std::cin >> number;
+
+	do 
+	{
+		int lastNum = number % 10;
+		sum += lastNum;
+		number/=10;
+
+	} while (number != 0);
+	std::cout << sum << std::endl;
 	
 }
 
