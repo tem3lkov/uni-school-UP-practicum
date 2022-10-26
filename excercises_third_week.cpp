@@ -38,5 +38,21 @@ int main()
     }
 
     std::cout << temp << std::endl;
+    
+    // Forth task
+    int n = 0;
+	int newNumber = 0;
+	int firstNumber = 0;
+	int secondNumber = 1;
+	std::cin >> n;
+
+
+	for (int i = 1; i <= n; i++) 
+	{
+		newNumber = firstNumber + secondNumber;
+		secondNumber = firstNumber;
+		firstNumber = newNumber;
+	}
+	std::cout << newNumber << std::endl;
 }
 
