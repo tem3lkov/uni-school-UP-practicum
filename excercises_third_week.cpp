@@ -233,5 +233,51 @@ int main()
 		copy /= 10;
 	}
 	cout << reversedNum;
+	
+	// Task fifteen
+	int day = 0;
+	int month = 0;
+	int year = 0;
+	int days = 0;
+	
+	cout << "Please enter a date and days to calculate: ";
+	cin >> day >> month >> year >> days;
+
+	bool isLeapYear = (year % 100 != 0 && year % 4 == 0) || year % 400 == 0;
+
+	for (int i = 0; i <= days; i++) {
+		day += 1;
+		if (month == 2) {
+			if (isLeapYear && day > 29) {
+				month++;
+				day = 1;
+			}
+			else if (isLeapYear && day > 28) {
+				month++;
+				day = 1;
+			}
+		}
+		if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
+			if (day > 31) {
+				day = 1;
+				month++;
+			}
+		}
+		else {
+			if (day > 30) {
+				day = 1;
+				month++;
+			}
+		}
+		if (month > 12) {
+			year++;
+			month = 1;
+		}
+	}
+
+	cout << "The date after " << days << " days would be " << day << " - " << month << " - " << year << endl;
+
+
+
 }
 
