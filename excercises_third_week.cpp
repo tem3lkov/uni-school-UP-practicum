@@ -277,7 +277,16 @@ int main()
 
 	cout << "The date after " << days << " days would be " << day << " - " << month << " - " << year << endl;
 
+	// Task sixteen
+	int num = 0;
+	int sum = 0;
+	cin >> num;
+	
+	for (int i = 2; i <= num; i++) {
+		if (num % i == 0) sum += num / i;
+	}
 
+	cout << boolalpha << (num == sum);
 
 }
 
