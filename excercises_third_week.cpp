@@ -190,5 +190,37 @@ int main()
 	}
 	cout << rotations << " rotation(s) and the hour hand is at " << hours << " o'clock";
 	
+	//Task Thirteen
+	int numberOfGrades = 0;
+	int currentGrade = 0;
+
+	int _6 = 0;
+	int _5 = 0;
+	int _4 = 0;
+	int _3 = 0;
+	int _2 = 0;
+
+	cout << "How many grades do you want to enter: ";
+	cin >> numberOfGrades;
+
+
+
+	for (int i = 0; i < numberOfGrades; i++) {
+		cin >> currentGrade;
+
+		switch(currentGrade) {
+		case 6: _6++; break;
+		case 5: _5++; break;
+		case 4: _4++; break;
+		case 3: _3++; break;
+		default: _2++; break;
+		}
+	}
+	cout << "Number of excelent grades is: " << _6 << endl << "Percentage of excelent grades is: " << ((double)_6 / numberOfGrades) * 100 << "%" << endl;
+	cout << "Number of very good grades is: " << _5 << endl << "Percentage of very good grades is: " << ((double)_5 / numberOfGrades) * 100 << "%" << endl;
+	cout << "Number of good grades is: " << _4 << endl << "Percentage of good grades is: " << ((double)_4 / numberOfGrades) * 100 << "%" << endl;
+	cout << "Number of meh grades is: " << _3 << endl << "Percentage of meh grades is: " << ((double)_3 / numberOfGrades) * 100 << "%" << endl;
+	cout << "Number of bad grades is: " << _2 << endl << "Percentage of bad grades is: " << ((double)_2 / numberOfGrades) * 100 << "%" << endl;
+
 }
 
