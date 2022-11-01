@@ -222,5 +222,16 @@ int main()
 	cout << "Number of meh grades is: " << _3 << endl << "Percentage of meh grades is: " << ((double)_3 / numberOfGrades) * 100 << "%" << endl;
 	cout << "Number of bad grades is: " << _2 << endl << "Percentage of bad grades is: " << ((double)_2 / numberOfGrades) * 100 << "%" << endl;
 
+	// Task fourteen
+	int num = 0;
+	cin >> num;
+
+	int reversedNum = 0;
+	int copy = num;
+	while (copy > 0) {
+		reversedNum = (copy % 10) + reversedNum * 10;
+		copy /= 10;
+	}
+	cout << reversedNum;
 }
 
