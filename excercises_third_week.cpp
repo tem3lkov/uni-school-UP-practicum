@@ -152,6 +152,27 @@ int main()
 
     cout << binaryNumber;
 	
+	// Eleventh task
+	    int rows = 0;
+
+	    cout << "Enter number of sides: ";
+	    cin >> rows;
+	    for (int i = 0; i < rows; i++) {
+		for(int j = 0; j< rows; j++) {
+		    if (j < i) {
+			cout << "-";
+
+			continue;
+		    }
+		    if (i == j) {
+			cout << "0";
+
+			continue;
+		    }
+		    cout << "+";
+		}
+		cout << "\n";
+    }
 	
 }
 
