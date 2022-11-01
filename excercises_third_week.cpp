@@ -107,5 +107,51 @@ int main()
 		temp *= a;
 	}
 	std::cout << temp << std::endl;
+	
+	// Eight task
+	int number = 0;
+	bool isPrime = true;
+	
+	cin >> number;
+
+	for (int i = 2; i < number; i++) {
+		if(number % i == 0) {
+			isPrime = false;
+			break;
+		}
+	}
+
+	std::cout << (isPrime ? "YES" : "NO");
+	
+	// Ninth task
+	char start = 'A';
+	char end = 'Z';
+
+	for (int i = start; i <= end; i++) {
+		if ((char)i == 'A' || (char)i == 'E' || (char)i == 'U' || (char)i == 'O' || (char)i == 'I') continue;
+		cout << (char)i << " ";
+	}
+	
+
+	// Tenth task
+
+    int userInput;
+
+    std::cin >> userInput;
+
+    int binaryBase = 2;
+    int binaryNumber = 0;
+    int base = 1;
+
+    while (userInput > 0) {
+	binaryNumber += base * (userInput % binaryBase);
+	base*=10;
+	userInput/=binaryBase;
+    }
+
+
+    cout << binaryNumber;
+	
+	
 }
 
