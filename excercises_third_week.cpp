@@ -174,5 +174,21 @@ int main()
 		cout << "\n";
     }
 	
+	
+
+	// Task twelve
+ 	int hours = 0;
+
+	cout << "Enter positive number of hours: ";
+	cin >> hours;
+	int rotations = 0;
+	int hoursLeft = 0;
+	while (hours>=12) {
+	   hours -= 12;
+	   if (hoursLeft >= 0) rotations++;
+
+	}
+	cout << rotations << " rotation(s) and the hour hand is at " << hours << " o'clock";
+	
 }
 
